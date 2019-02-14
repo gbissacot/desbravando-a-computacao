@@ -15,6 +15,12 @@ name = English
 url_prefix = /en/
 locale = en_US
 
+[servers.production]
+name = Production
+enabled = yes
+default = yes
+target = rsync://humrochagf@ip-50-116-32-253.cloudezapp.io/srv/desbravandoacomputacao.com.br/www
+
 [packages]
 lektor-gulp = 0.3.2
 lektor-markdown-admonition = 0.3.1
