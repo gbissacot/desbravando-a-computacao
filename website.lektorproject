@@ -1,0 +1,21 @@
+[project]
+name = Desbravando a Computação
+locale = pt_BR
+url = https://desbravandoacomputacao.com.br/
+url_style = absolute
+author = Giovanna Bissacot & Humberto Rocha
+
+[alternatives.pt-br]
+name = Português
+primary = yes
+locale = pt_BR
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en_US
+
+[packages]
+lektor-gulp = 0.3.2
+lektor-markdown-admonition = 0.3.1
+lektor-markdown-highlighter = 0.3.1

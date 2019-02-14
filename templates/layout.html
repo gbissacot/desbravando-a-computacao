@@ -1,0 +1,32 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="{{ this.alt }}">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- pygments -->
+    <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
+
+    <!-- main styles -->
+    <link rel="stylesheet" href="{{ '/styles/main.min.css'|url }}" type="text/css" media="all">
+
+    <title>{{ config.PROJECT.name }}</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">{{ config.PROJECT.name }}</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{{ '/scripts/jquery.slim.min.js'|url }}"></script>
+    <script src="{{ '/scripts/popper.min.js'|url }}"></script>
+    <script src="{{ '/scripts/bootstrap.min.js'|url }}"></script>
+  </body>
+</html>

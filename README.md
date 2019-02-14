@@ -1,0 +1,3 @@
+# Desbravando a Computação
+
+Este é um blog feito com :heart: para aqueles decidiram se aventurar no mundo da programação...
