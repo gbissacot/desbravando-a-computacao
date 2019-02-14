@@ -1,6 +1,7 @@
 [project]
 name = Desbravando a Computação
 locale = pt_BR
+logo = /images/logo.png
 url = https://desbravandoacomputacao.com.br/
 url_style = absolute
 author = Giovanna Bissacot & Humberto Rocha
