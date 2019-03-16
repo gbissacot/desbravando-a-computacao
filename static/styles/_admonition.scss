@@ -1,0 +1,28 @@
+.admonition {
+  @extend .alert;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@each $type, $theme in (
+  "note": "primary",
+  "info": "info",
+  "tip": "warning",
+  "warning": "danger",
+) {
+  .admonition-#{$type} {
+    @extend .alert-#{$theme};
+
+    a {
+      color: theme-color($theme);
+      border: 1px solid lighten(theme-color($theme), 30%);
+
+      &:hover, &:focus, &:active {
+        color: theme-color($theme);
+        border: 1px solid theme-color($theme);
+      }
+    }
+  }
+}
