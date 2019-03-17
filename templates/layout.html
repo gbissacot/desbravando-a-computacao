@@ -64,8 +64,12 @@
 
         <div class="col-9">
           <div class="content">
-            {% block body %}
-            {% endblock %}
+            <div class="row">
+              <div class="offset-1 col-10 mt-5">
+                {% block body %}
+                {% endblock %}
+              </div>
+            </div>
           </div>
         </div>
       </div>
