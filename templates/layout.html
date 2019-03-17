@@ -27,45 +27,33 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-3">
-          <div class="navigation">
-            <div class="container">
-              <div class="row mt-5">
+        <div class="col-12 col-md-3 navigation-wrapper">
+          <div class="navigation my-2">
+              <div class="row mt-md-5">
                 <div class="col text-center">
                   <img class="logo" src="{{ config.PROJECT.logo|url }}" alt="{{ config.PROJECT.name }}">
                 </div>
               </div>
 
-              <div class="row mt-5">
-                <div class="col">
-                  <ul class="nav flex-column text-center">
-                    <li class="nav-item">
-                      <a href="{{ '/'|url }}" class="nav-link{% if this._path == '/' %} active{% endif %}">
-                        Home
-                      </a>
-                    </li>
-
-                    {% for href, title in [
-                      ['/sobre', 'Sobre'],
-                      ['/blog', 'Blog'],
-                    ] %}
-                      <li class="nav-item">
-                        <a href="{{ href|url }}" class="nav-link{% if this.is_child_of(href) %} active{% endif %}">
-                          {{ title }}
-                        </a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
-            </div>
+              <ul class="nav flex-md-column justify-content-center text-center mt-md-5">
+                {% for href, title in [
+                  ['/sobre', 'Sobre'],
+                  ['/blog', 'Blog'],
+                ] %}
+                  <li class="nav-item">
+                    <a href="{{ href|url }}" class="nav-link{% if this.is_child_of(href) %} active{% endif %}">
+                      {{ title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
           </div>
         </div>
 
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <div class="content">
             <div class="row">
-              <div class="offset-1 col-10 mt-5">
+              <div class="col-12 offset-md-1 col-md-10 mt-4 mt-md-5">
                 {% block body %}
                 {% endblock %}
               </div>

@@ -1,10 +1,17 @@
-.navigation {
+.navigation-wrapper {
   background: #b2dfdb;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  max-width: 100%;
+
+  @include media-breakpoint-up(md) {
+    height: 100vh;
+
+    .navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      max-width: inherit;
+    }
+  }
 }
 
 .logo {

@@ -1,32 +1,3 @@
-title: Desbravando a Computação!
----
-body:
-
-Texto de exemplo
-
-## Título
-
-- Item 1
-- Item 2
-- Item 3
-
-![teste](teste.png)
-
-Código `inline` e um [link](http://example.com)
-
-```python
-# bloco de código http://example.com
-
-def hello(name):
-    print(f'Hello {name}')
-```
-
-! Uma ex
-
-!! Duas ex
-
-!!! Tres ex
-
-!!!! Quatro ex
-
-teste **bold**
+_model: redirect
+--- 
+target: /blog
